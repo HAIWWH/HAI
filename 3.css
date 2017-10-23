@@ -1,0 +1,40 @@
+@charset "utf-8";
+body{
+	width:100%;
+	height:100%;
+	background: orange;
+    background-position:left; 
+    background-image: url('images.png');  
+    }
+	h2{
+		color:#FF3;
+		margin:20px 400px;
+		
+		}
+tbody{
+    border:3px dashed yellow;
+}
+#container{
+    height:800px;
+    margin:0px auto;
+}
+#div1{
+	width:600px;
+	margin:20px auto;
+	}
+ #input{
+    display: none;
+	margin:40px 260px;
+  }
+ #res{
+    width:80%;
+    margin:0 auto;
+    border-collapse: collapse;
+  }
+  #res td{
+    border:1px solid black;
+  }
+  td{
+    text-align: center;
+	}
+
