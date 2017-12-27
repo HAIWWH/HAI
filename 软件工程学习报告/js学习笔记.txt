@@ -1,0 +1,263 @@
+﻿width:200px; 长
+height:200px;高
+
+背景   /*单一样式*/
+backgrount-color:
+{
+   red、yellow等；
+   #16进制；
+   rgb(140,164,234);
+}
+
+backgrount-image:url(image/1.jpg);
+/*默认状态下会平铺*/
+backgrount-repeat:no-repeat;
+/*不重复
+*/
+backgrount-repeat:repeat-x;
+/*
+ x方向平铺
+*/
+backgrount-position:100px 30px;
+/*
+背景定位： x y
+(100px 30px)
+(20% 30%)
+center 30px
+left|center|reght top|center|bottom
+ */
+ 
+ 
+ backgrount-attachment:fixed;
+ /*固定定位：图片不可移动*/
+
+复合样式
+backgrount：gra url(image/2.jpg) no-repeat.....;
+
+
+
+边框
+border:1px deshed #033;
+border-top:1px deshed #033;/*等等都可以*/
+/*大小，虚线，颜色*/
+
+PS技术：切图（抠图）、测量、图片简单处理
+
+如何得到一张图片：
+1）设计师给你的PS的图片
+2）印屏幕：PrtScr
+  ps快捷键：Ctrl+N新建
+            Ctrl+O打开
+			Ctrl++放大
+			alt+Ctrl+shift+s保存为web和设备所用格式
+            Ctrl+shift+i反选
+3）浏览器			
+		
+		
+<linke href="**.css" rel ="stylesheet"/> <!--调用**.css文件-->	
+
+
+
+
+
+
+第二天
+
+
+单位（px 像素）
+width 宽度 
+height 高度
+border 边框(集合样式)
+	border-width 边框宽度
+		border-top-width
+		border-right-width
+		border-left-width
+		border-bottom-width
+	border-style 边框样式 solid 实线 deshed虚线 dotted点线
+	border-color 边框颜色
+		1）关键字
+		2）rgb
+		3）十六进制，六位或者三位的数字（只能是三位和六位）
+<!--嵌套关系（父子关系）、（兄弟关系）-->
+
+backgrount-color 背景颜色
+backgrount-image:url(图片地址) 背景图片
+
+
+第三天
+font-size 文字大小
+font-weight 文字加粗
+font-weight:normal 正常
+font-style:italic 斜体
+font-style:normal 正常
+line-height 行高（文字在一行中上下居中）
+font-family:"华文彩云"  字体
+font:font-weight font-style font-size/line-height font-family
+<!--字体大小和字体必须设置（且顺序不能变）--> 
+color:red 文字颜色
+text-indent:28px（2em） 首行缩进28(1em = 一个文字大小)
+text-align:center  文本对齐方式
+text-decoration:underline 文字下划线
+letter-spacing:5px 字间距
+word-spacing:10px 词间距
+
+
+
+padding  内填充(padding在元素的宽旷以内。内容之外)
+
+可视宽度：可是高度 = border+padding+width(height);
+padding-top
+padding-right-width
+padding-bottom
+padding-left
+
+margin；30px
+/*外边距（margin元素的边框之外不显示）
+  margin相邻两个元素之间是
+*/
+/*
+   margin传递，子元素的margin会传递给父元素
+*/
+
+第四天
+<a href ="http://www.baidu.com">百度</a>
+a 链接  href 页面地址
+href 写的是个id的话，点击之后会直接跳转到id所在位置 瞄点
+target="_blank" 新窗口打开
+target ="_self"  当前窗口打开
+<base target = "_blank"/>
+
+
+
+
+
+第五天
+<!--
+  绝对路径（XX区XX路XX号）
+      线上的绝对路径
+	  线下的绝对路径
+  相对路径<img  src="../../img.jpg">
+-->
+<nav> 导航</nav>
+<footer>底部</footer>
+<section></section>
+<h1>标题</h1>
+<h2>标题</h2>
+<h3>标题</h3>
+<h4>标题</h4>
+<h5>标题</h5>
+<h6>标题</h6>
+<p><strong>段落</strong>文字</p>
+<!--strong强调-->
+<ul>/*无序列表*/
+<li>列表项</li>
+<li>列表项</li>
+<li>列表项</li>
+<li>列表项</li>
+</ul>
+
+<dl>/*有序列表*/
+  <dt></dt>
+  <dd></dd>
+</dl>
+
+<img src="地址"/>
+
+
+第六天
+id 
+class 类选择
+类型选择
+群组选择
+* 通配符 代表所有的标签
+选择器的优先级
+    选择器的优先级一致的情况下后边的样式会覆盖前面的
+	行间样式>id>class>类型选择>通配符
+    
+块：
+   1.独占一行
+   2.支持所有样式
+   3.不设置宽度的时候，宽度撑满正行
+内嵌：  
+   1.可以在一行显示
+   2.不支持宽高，对上下的margin和padding等样式支持也有问题
+   3.宽度内容撑开的
+   4.代码换行会被解析
+   
+body{margin:0px;} 
+ul,ol{margin:0;padding0;} 
+li{list-style:none;}
+dl{margin:0}
+dd{margin:0;}
+h1,h2,h3,h4,h5,h6{margin:0;}
+p{margin:0;}
+strong{font-weight:normal;}
+a{text-decoration:normal;}
+em{front-syle:normal;}
+img{border:none}
+
+
+<div>块</div>
+
+ction>划分页面板块</section>
+
+<header>头部</header>
+
+<nav>导航</nav>
+
+<footer>底部</footer>
+
+<article>article</article>
+
+<aside>article的附属</aside>
+
+<ul>
+    <li>无序列表</li>
+	<li>无序列表</li>
+</ul>
+
+<ol>
+   <li>有序列表</li>
+   <li>有序列表</li>
+</ol>   
+
+<dl>
+   <dt>定义列表的项目</dt>
+   <dd>dt的展开描述</dd>
+</dl>
+
+<h1>标题</h1>
+<h2>标题</h2>
+<h3>标题</h3>
+<h4>标题</h4>
+<h5>标题</h5>
+<h6>标题</h6>
+
+<p>段落</p>
+
+<span>内嵌</span>
+
+<strong>strong</strong>
+
+<a href="#">链接</a>
+
+<em>em</em>
+
+<img src="">
+
+
+第七天
+
+  display:block 显示为块
+  display:inline 显示为内联
+  display:inline-block 内联块
+  
+  inline-block
+    块元素能在一行显示
+	内联元素支持宽高
+	没有宽度的时候由内容撑开宽度
+
+	
+第八天
+   
+	
